@@ -1,5 +1,5 @@
-#ifndef _SHELL_
-#define _SHELL_
+#ifndef _SHELL_H
+#define _SHELL_H
 
 #include <string.h>
 #include <stdio.h>
@@ -8,7 +8,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/types.h>
-#include <dirent.h>
 #include <sys/stat.h>
 #include <stdarg.h>
 #include <signal.h>
