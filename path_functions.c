@@ -1,13 +1,11 @@
 #include "shell.h"
 
 /**
- * search_dir - Looks through directories stored in path_tokens for a
+ * search_dir - Function that search through directories in path_tokens for a
  * specific file.
- * @path_parts: A pointer to an array of strings representing the different
- * paths contained in the PATH environmental varible.
- * @command: Represents a command. For example ls, echo, pwd, /bin/ls etc.
- * Return: Upon success a string with the upper most directory containing
- * the command file. Otherwise returns NULL.
+ * @path_parts: A pointer to an array of strings.
+ * @command: Represents a command given by the user.
+ * Return: On Success a string  Otherwise returns NULL.
  */
 char *search_dir(char **path_parts, char *command)
 {
@@ -42,12 +40,10 @@ char *search_dir(char **path_parts, char *command)
 }
 
 /**
- * find_the_way - switcht the current directory for the especified
- * in the cariable dir
+ * find_the_way - switcht the current directory
  * @dir: Directory to chek the file
- * @comand: Represents a command. For example ls, echo, pwd, /bin/ls etc.
- * Return: If the comand is found return 1
- * Other whise return 0.
+ * @comand: Command given by the user.
+ * Return: If the comand is found return 1,otherwhise return 0.
  */
 int find_the_way(char *dir, char *comand)
 {
@@ -75,7 +71,7 @@ int find_the_way(char *dir, char *comand)
  * build_path - Combines two strings one representing the path directory and
  * one representing the command file.
  * @directory: Represents a directory in the path.
- * @command: Represents a file in a directory of the path.
+ * @command: Command given by the user.
  * Return: Upon success a string representing the full path of a command.
  * Otherwise NULL.
  */
