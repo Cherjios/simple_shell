@@ -26,7 +26,6 @@ Now it is just a simple shell, and has many limitations, including:
 *   Support CTRL+D
 
 
-
 ## To compile:
 ```gcc -Wall -Werror -Wextra -pedantic *.c -o shell```
 
