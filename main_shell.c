@@ -133,7 +133,7 @@ int find_path(char *str)
  */
 char **split_path(int index, char *str)
 {
-	char *env_var;
+char *env_var;
 	int token_count;
 	const char *delim = ":\n";
 	char **path_tokens;
