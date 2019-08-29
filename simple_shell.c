@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * create_child - Creates a child in order to execute another program.
+ * create_child - Creates a child process in order to execute another program.
  * @arg: An array of pointers to strings containing the possible name
  * of a program and its parameters. This array is NULL terminated.
  * @input: The contents of the read line.
