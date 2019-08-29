@@ -25,7 +25,7 @@ void exit_cmd(char *input)
 {
 	free(input);
 	/*print_str("\n", 1);*/
-	exit(1);
+	exit(0);
 }
 
 /**
