@@ -3,12 +3,13 @@
 simple_shell - a shell (standard command line interpreter)
 .SH SYNOPSIS
 ./shell [-options] [arguement ...]
+
 .SH DESCRIPTION
 This ./shell program is a simulation of the Real Shell. /shell is written in C. Shell is a program that takes commands form the keyboard and gives them to the operating system to perform.
 ./shell works eiter in interactive or non-interactive mode, it executes commands based on the input.
 
 Builtin commands are part of the shell itself and they are executed directly in the shell. However, external commands they need to be located in PATH, load and run. 
-In interactive mode, the shell will prompt with \' $ \', and proess the entered input upon a return stroke.  In non-interactive mode, standard output must be piped into the executable.
+In interactive mode, the shell will prompt with "$", and proess the entered input upon a return stroke.  In non-interactive mode, standard output must be piped into the executable.
 
 .SH USAGE
 In addition to searching the path, the following features are supported.
